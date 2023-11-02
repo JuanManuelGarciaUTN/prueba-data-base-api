@@ -1,0 +1,2469 @@
+<button (click)="guardar()">Guardar</button>
+<button (click)="buscar()">Buscar</button>
+<button (click)="actualizar()">Actualizar</button>
+<div class="carrera">
+  <div class="campo">
+    <label for="">ID</label>
+    <input type="text" [(ngModel)]="id" id="">
+  </div>
+  <div class="campo">
+    <label for="">Distancia</label>
+    <input type="text" [(ngModel)]="distancia" id="">
+  </div>
+  <div class="campo">
+    <label for="">Ganador</label>
+    <input type="text" [(ngModel)]="ganador" id="">
+  </div>
+  <div class="campo">
+    <label for="">Tipo</label>
+    <select name="" [(ngModel)]="tipo" id="">
+      <option value="1">Arena</option>
+      <option value="2">Pasto</option>
+    </select>
+  </div>
+</div>
+<div class="caballo">
+<h2>Caballo 1</h2>
+  <div class="actual">
+<h2>Actual</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab1.actual.numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Sexo</label>
+      <select name="" [(ngModel)]="cab1.actual.sexo" id="">
+        <option value="1">Macho</option>
+        <option value="2">Hembra</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Edad</label>
+      <input type="text" [(ngModel)]="cab1.actual.edad" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab1.actual.peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab1.actual.jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Caballo</label>
+      <input type="text" [(ngModel)]="cab1.actual.peso_caballo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab1.actual.spot" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab1.anterior[0].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab1.anterior[0].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab1.anterior[0].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab1.anterior[0].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab1.anterior[0].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab1.anterior[0].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab1.anterior[0].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab1.anterior[0].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab1.anterior[0].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab1.anterior[1].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab1.anterior[1].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab1.anterior[1].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab1.anterior[1].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab1.anterior[1].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab1.anterior[1].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab1.anterior[1].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab1.anterior[1].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab1.anterior[1].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab1.anterior[2].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab1.anterior[2].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab1.anterior[2].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab1.anterior[2].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab1.anterior[2].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab1.anterior[2].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab1.anterior[2].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab1.anterior[2].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab1.anterior[2].jockey" id="">
+    </div>
+  </div>
+</div>
+<div class="caballo">
+<h2>Caballo 2</h2>
+  <div class="actual">
+<h2>Actual</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab2.actual.numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Sexo</label>
+      <select name="" [(ngModel)]="cab2.actual.sexo" id="">
+        <option value="1">Macho</option>
+        <option value="2">Hembra</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Edad</label>
+      <input type="text" [(ngModel)]="cab2.actual.edad" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab2.actual.peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab2.actual.jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Caballo</label>
+      <input type="text" [(ngModel)]="cab2.actual.peso_caballo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab2.actual.spot" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab2.anterior[0].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab2.anterior[0].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab2.anterior[0].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab2.anterior[0].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab2.anterior[0].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab2.anterior[0].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab2.anterior[0].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab2.anterior[0].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab2.anterior[0].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab2.anterior[1].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab2.anterior[1].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab2.anterior[1].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab2.anterior[1].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab2.anterior[1].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab2.anterior[1].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab2.anterior[1].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab2.anterior[1].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab2.anterior[1].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab2.anterior[2].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab2.anterior[2].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab2.anterior[2].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab2.anterior[2].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab2.anterior[2].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab2.anterior[2].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab2.anterior[2].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab2.anterior[2].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab2.anterior[2].jockey" id="">
+    </div>
+  </div>
+</div>
+<div class="caballo">
+<h2>Caballo 3</h2>
+  <div class="actual">
+<h2>Actual</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab3.actual.numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Sexo</label>
+      <select name="" [(ngModel)]="cab3.actual.sexo" id="">
+        <option value="1">Macho</option>
+        <option value="2">Hembra</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Edad</label>
+      <input type="text" [(ngModel)]="cab3.actual.edad" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab3.actual.peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab3.actual.jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Caballo</label>
+      <input type="text" [(ngModel)]="cab3.actual.peso_caballo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab3.actual.spot" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab3.anterior[0].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab3.anterior[0].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab3.anterior[0].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab3.anterior[0].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab3.anterior[0].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab3.anterior[0].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab3.anterior[0].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab3.anterior[0].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab3.anterior[0].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab3.anterior[1].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab3.anterior[1].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab3.anterior[1].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab3.anterior[1].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab3.anterior[1].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab3.anterior[1].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab3.anterior[1].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab3.anterior[1].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab3.anterior[1].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab3.anterior[2].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab3.anterior[2].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab3.anterior[2].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab3.anterior[2].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab3.anterior[2].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab3.anterior[2].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab3.anterior[2].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab3.anterior[2].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab3.anterior[2].jockey" id="">
+    </div>
+  </div>
+</div>
+<div class="caballo">
+<h2>Caballo 4</h2>
+  <div class="actual">
+<h2>Actual</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab4.actual.numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Sexo</label>
+      <select name="" [(ngModel)]="cab4.actual.sexo" id="">
+        <option value="1">Macho</option>
+        <option value="2">Hembra</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Edad</label>
+      <input type="text" [(ngModel)]="cab4.actual.edad" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab4.actual.peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab4.actual.jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Caballo</label>
+      <input type="text" [(ngModel)]="cab4.actual.peso_caballo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab4.actual.spot" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab4.anterior[0].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab4.anterior[0].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab4.anterior[0].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab4.anterior[0].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab4.anterior[0].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab4.anterior[0].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab4.anterior[0].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab4.anterior[0].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab4.anterior[0].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab4.anterior[1].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab4.anterior[1].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab4.anterior[1].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab4.anterior[1].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab4.anterior[1].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab4.anterior[1].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab4.anterior[1].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab4.anterior[1].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab4.anterior[1].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab4.anterior[2].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab4.anterior[2].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab4.anterior[2].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab4.anterior[2].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab4.anterior[2].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab4.anterior[2].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab4.anterior[2].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab4.anterior[2].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab4.anterior[2].jockey" id="">
+    </div>
+  </div>
+</div>
+<div class="caballo">
+<h2>Caballo 5</h2>
+  <div class="actual">
+<h2>Actual</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab5.actual.numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Sexo</label>
+      <select name="" [(ngModel)]="cab5.actual.sexo" id="">
+        <option value="1">Macho</option>
+        <option value="2">Hembra</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Edad</label>
+      <input type="text" [(ngModel)]="cab5.actual.edad" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab5.actual.peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab5.actual.jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Caballo</label>
+      <input type="text" [(ngModel)]="cab5.actual.peso_caballo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab5.actual.spot" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab5.anterior[0].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab5.anterior[0].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab5.anterior[0].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab5.anterior[0].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab5.anterior[0].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab5.anterior[0].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab5.anterior[0].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab5.anterior[0].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab5.anterior[0].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab5.anterior[1].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab5.anterior[1].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab5.anterior[1].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab5.anterior[1].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab5.anterior[1].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab5.anterior[1].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab5.anterior[1].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab5.anterior[1].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab5.anterior[1].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab5.anterior[2].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab5.anterior[2].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab5.anterior[2].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab5.anterior[2].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab5.anterior[2].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab5.anterior[2].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab5.anterior[2].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab5.anterior[2].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab5.anterior[2].jockey" id="">
+    </div>
+  </div>
+</div>
+<div class="caballo">
+<h2>Caballo 6</h2>
+  <div class="actual">
+<h2>Actual</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab6.actual.numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Sexo</label>
+      <select name="" [(ngModel)]="cab6.actual.sexo" id="">
+        <option value="1">Macho</option>
+        <option value="2">Hembra</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Edad</label>
+      <input type="text" [(ngModel)]="cab6.actual.edad" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab6.actual.peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab6.actual.jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Caballo</label>
+      <input type="text" [(ngModel)]="cab6.actual.peso_caballo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab6.actual.spot" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab6.anterior[0].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab6.anterior[0].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab6.anterior[0].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab6.anterior[0].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab6.anterior[0].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab6.anterior[0].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab6.anterior[0].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab6.anterior[0].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab6.anterior[0].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab6.anterior[1].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab6.anterior[1].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab6.anterior[1].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab6.anterior[1].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab6.anterior[1].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab6.anterior[1].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab6.anterior[1].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab6.anterior[1].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab6.anterior[1].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab6.anterior[2].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab6.anterior[2].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab6.anterior[2].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab6.anterior[2].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab6.anterior[2].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab6.anterior[2].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab6.anterior[2].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab6.anterior[2].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab6.anterior[2].jockey" id="">
+    </div>
+  </div>
+</div>
+<div class="caballo">
+<h2>Caballo 7</h2>
+  <div class="actual">
+<h2>Actual</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab7.actual.numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Sexo</label>
+      <select name="" [(ngModel)]="cab7.actual.sexo" id="">
+        <option value="1">Macho</option>
+        <option value="2">Hembra</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Edad</label>
+      <input type="text" [(ngModel)]="cab7.actual.edad" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab7.actual.peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab7.actual.jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Caballo</label>
+      <input type="text" [(ngModel)]="cab7.actual.peso_caballo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab7.actual.spot" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab7.anterior[0].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab7.anterior[0].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab7.anterior[0].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab7.anterior[0].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab7.anterior[0].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab7.anterior[0].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab7.anterior[0].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab7.anterior[0].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab7.anterior[0].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab7.anterior[1].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab7.anterior[1].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab7.anterior[1].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab7.anterior[1].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab7.anterior[1].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab7.anterior[1].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab7.anterior[1].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab7.anterior[1].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab7.anterior[1].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab7.anterior[2].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab7.anterior[2].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab7.anterior[2].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab7.anterior[2].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab7.anterior[2].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab7.anterior[2].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab7.anterior[2].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab7.anterior[2].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab7.anterior[2].jockey" id="">
+    </div>
+  </div>
+</div>
+<div class="caballo">
+<h2>Caballo 8</h2>
+  <div class="actual">
+<h2>Actual</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab8.actual.numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Sexo</label>
+      <select name="" [(ngModel)]="cab8.actual.sexo" id="">
+        <option value="1">Macho</option>
+        <option value="2">Hembra</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Edad</label>
+      <input type="text" [(ngModel)]="cab8.actual.edad" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab8.actual.peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab8.actual.jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Caballo</label>
+      <input type="text" [(ngModel)]="cab8.actual.peso_caballo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab8.actual.spot" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab8.anterior[0].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab8.anterior[0].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab8.anterior[0].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab8.anterior[0].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab8.anterior[0].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab8.anterior[0].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab8.anterior[0].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab8.anterior[0].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab8.anterior[0].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab8.anterior[1].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab8.anterior[1].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab8.anterior[1].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab8.anterior[1].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab8.anterior[1].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab8.anterior[1].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab8.anterior[1].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab8.anterior[1].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab8.anterior[1].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab8.anterior[2].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab8.anterior[2].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab8.anterior[2].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab8.anterior[2].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab8.anterior[2].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab8.anterior[2].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab8.anterior[2].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab8.anterior[2].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab8.anterior[2].jockey" id="">
+    </div>
+  </div>
+</div>
+<div class="caballo">
+<h2>Caballo 9</h2>
+  <div class="actual">
+<h2>Actual</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab9.actual.numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Sexo</label>
+      <select name="" [(ngModel)]="cab9.actual.sexo" id="">
+        <option value="1">Macho</option>
+        <option value="2">Hembra</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Edad</label>
+      <input type="text" [(ngModel)]="cab9.actual.edad" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab9.actual.peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab9.actual.jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Caballo</label>
+      <input type="text" [(ngModel)]="cab9.actual.peso_caballo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab9.actual.spot" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab9.anterior[0].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab9.anterior[0].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab9.anterior[0].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab9.anterior[0].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab9.anterior[0].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab9.anterior[0].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab9.anterior[0].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab9.anterior[0].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab9.anterior[0].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab9.anterior[1].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab9.anterior[1].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab9.anterior[1].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab9.anterior[1].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab9.anterior[1].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab9.anterior[1].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab9.anterior[1].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab9.anterior[1].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab9.anterior[1].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab9.anterior[2].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab9.anterior[2].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab9.anterior[2].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab9.anterior[2].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab9.anterior[2].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab9.anterior[2].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab9.anterior[2].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab9.anterior[2].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab9.anterior[2].jockey" id="">
+    </div>
+  </div>
+</div>
+<div class="caballo">
+<h2>Caballo 10</h2>
+  <div class="actual">
+<h2>Actual</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab10.actual.numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Sexo</label>
+      <select name="" [(ngModel)]="cab10.actual.sexo" id="">
+        <option value="1">Macho</option>
+        <option value="2">Hembra</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Edad</label>
+      <input type="text" [(ngModel)]="cab10.actual.edad" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab10.actual.peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab10.actual.jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Caballo</label>
+      <input type="text" [(ngModel)]="cab10.actual.peso_caballo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab10.actual.spot" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab10.anterior[0].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab10.anterior[0].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab10.anterior[0].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab10.anterior[0].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab10.anterior[0].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab10.anterior[0].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab10.anterior[0].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab10.anterior[0].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab10.anterior[0].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab10.anterior[1].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab10.anterior[1].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab10.anterior[1].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab10.anterior[1].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab10.anterior[1].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab10.anterior[1].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab10.anterior[1].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab10.anterior[1].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab10.anterior[1].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab10.anterior[2].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab10.anterior[2].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab10.anterior[2].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab10.anterior[2].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab10.anterior[2].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab10.anterior[2].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab10.anterior[2].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab10.anterior[2].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab10.anterior[2].jockey" id="">
+    </div>
+  </div>
+</div>
+<div class="caballo">
+<h2>Caballo 11</h2>
+  <div class="actual">
+<h2>Actual</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab11.actual.numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Sexo</label>
+      <select name="" [(ngModel)]="cab11.actual.sexo" id="">
+        <option value="1">Macho</option>
+        <option value="2">Hembra</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Edad</label>
+      <input type="text" [(ngModel)]="cab11.actual.edad" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab11.actual.peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab11.actual.jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Caballo</label>
+      <input type="text" [(ngModel)]="cab11.actual.peso_caballo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab11.actual.spot" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab11.anterior[0].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab11.anterior[0].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab11.anterior[0].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab11.anterior[0].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab11.anterior[0].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab11.anterior[0].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab11.anterior[0].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab11.anterior[0].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab11.anterior[0].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab11.anterior[1].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab11.anterior[1].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab11.anterior[1].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab11.anterior[1].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab11.anterior[1].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab11.anterior[1].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab11.anterior[1].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab11.anterior[1].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab11.anterior[1].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab11.anterior[2].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab11.anterior[2].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab11.anterior[2].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab11.anterior[2].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab11.anterior[2].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab11.anterior[2].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab11.anterior[2].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab11.anterior[2].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab11.anterior[2].jockey" id="">
+    </div>
+  </div>
+</div>
+<div class="caballo">
+<h2>Caballo 12</h2>
+  <div class="actual">
+<h2>Actual</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab12.actual.numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Sexo</label>
+      <select name="" [(ngModel)]="cab12.actual.sexo" id="">
+        <option value="1">Macho</option>
+        <option value="2">Hembra</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Edad</label>
+      <input type="text" [(ngModel)]="cab12.actual.edad" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab12.actual.peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab12.actual.jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Caballo</label>
+      <input type="text" [(ngModel)]="cab12.actual.peso_caballo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab12.actual.spot" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab12.anterior[0].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab12.anterior[0].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab12.anterior[0].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab12.anterior[0].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab12.anterior[0].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab12.anterior[0].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab12.anterior[0].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab12.anterior[0].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab12.anterior[0].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab12.anterior[1].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab12.anterior[1].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab12.anterior[1].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab12.anterior[1].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab12.anterior[1].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab12.anterior[1].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab12.anterior[1].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab12.anterior[1].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab12.anterior[1].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab12.anterior[2].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab12.anterior[2].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab12.anterior[2].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab12.anterior[2].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab12.anterior[2].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab12.anterior[2].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab12.anterior[2].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab12.anterior[2].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab12.anterior[2].jockey" id="">
+    </div>
+  </div>
+</div>
+<div class="caballo">
+<h2>Caballo 13</h2>
+  <div class="actual">
+<h2>Actual</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab13.actual.numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Sexo</label>
+      <select name="" [(ngModel)]="cab13.actual.sexo" id="">
+        <option value="1">Macho</option>
+        <option value="2">Hembra</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Edad</label>
+      <input type="text" [(ngModel)]="cab13.actual.edad" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab13.actual.peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab13.actual.jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Caballo</label>
+      <input type="text" [(ngModel)]="cab13.actual.peso_caballo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab13.actual.spot" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab13.anterior[0].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab13.anterior[0].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab13.anterior[0].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab13.anterior[0].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab13.anterior[0].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab13.anterior[0].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab13.anterior[0].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab13.anterior[0].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab13.anterior[0].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab13.anterior[1].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab13.anterior[1].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab13.anterior[1].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab13.anterior[1].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab13.anterior[1].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab13.anterior[1].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab13.anterior[1].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab13.anterior[1].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab13.anterior[1].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab13.anterior[2].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab13.anterior[2].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab13.anterior[2].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab13.anterior[2].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab13.anterior[2].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab13.anterior[2].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab13.anterior[2].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab13.anterior[2].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab13.anterior[2].jockey" id="">
+    </div>
+  </div>
+</div>
+<div class="caballo">
+<h2>Caballo 14</h2>
+  <div class="actual">
+<h2>Actual</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab14.actual.numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Sexo</label>
+      <select name="" [(ngModel)]="cab14.actual.sexo" id="">
+        <option value="1">Macho</option>
+        <option value="2">Hembra</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Edad</label>
+      <input type="text" [(ngModel)]="cab14.actual.edad" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab14.actual.peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab14.actual.jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Caballo</label>
+      <input type="text" [(ngModel)]="cab14.actual.peso_caballo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab14.actual.spot" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab14.anterior[0].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab14.anterior[0].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab14.anterior[0].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab14.anterior[0].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab14.anterior[0].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab14.anterior[0].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab14.anterior[0].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab14.anterior[0].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab14.anterior[0].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab14.anterior[1].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab14.anterior[1].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab14.anterior[1].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab14.anterior[1].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab14.anterior[1].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab14.anterior[1].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab14.anterior[1].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab14.anterior[1].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab14.anterior[1].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab14.anterior[2].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab14.anterior[2].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab14.anterior[2].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab14.anterior[2].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab14.anterior[2].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab14.anterior[2].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab14.anterior[2].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab14.anterior[2].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab14.anterior[2].jockey" id="">
+    </div>
+  </div>
+</div>
+<div class="caballo">
+<h2>Caballo 15</h2>
+  <div class="actual">
+<h2>Actual</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab15.actual.numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Sexo</label>
+      <select name="" [(ngModel)]="cab15.actual.sexo" id="">
+        <option value="1">Macho</option>
+        <option value="2">Hembra</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Edad</label>
+      <input type="text" [(ngModel)]="cab15.actual.edad" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab15.actual.peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab15.actual.jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Caballo</label>
+      <input type="text" [(ngModel)]="cab15.actual.peso_caballo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab15.actual.spot" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab15.anterior[0].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab15.anterior[0].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab15.anterior[0].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab15.anterior[0].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab15.anterior[0].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab15.anterior[0].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab15.anterior[0].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab15.anterior[0].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab15.anterior[0].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab15.anterior[1].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab15.anterior[1].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab15.anterior[1].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab15.anterior[1].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab15.anterior[1].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab15.anterior[1].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab15.anterior[1].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab15.anterior[1].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab15.anterior[1].jockey" id="">
+    </div>
+  </div>
+  <div class="anterior">
+<h2>Anterior</h2>
+    <div class="campo">
+      <label for="">Numero</label>
+      <input type="text" [(ngModel)]="cab15.anterior[2].numero" id="">
+    </div>
+    <div class="campo">
+      <label for="">Posicion</label>
+      <input type="text" [(ngModel)]="cab15.anterior[2].posicion" id="">
+    </div>
+    <div class="campo">
+      <label for="">Distancia</label>
+      <input type="text" [(ngModel)]="cab15.anterior[2].distancia" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tipo</label>
+      <select name="" [(ngModel)]="cab15.anterior[2].tipo" id="">
+        <option value="1">Arena</option>
+        <option value="2">Pasto</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="">Cuerpos</label>
+      <input type="text" [(ngModel)]="cab15.anterior[2].cuerpos" id="">
+    </div>
+    <div class="campo">
+      <label for="">Tiempo</label>
+      <input type="text" [(ngModel)]="cab15.anterior[2].tiempo" id="">
+    </div>
+    <div class="campo">
+      <label for="">Spot</label>
+      <input type="text" [(ngModel)]="cab15.anterior[2].spot" id="">
+    </div>
+    <div class="campo">
+      <label for="">Peso Jockey</label>
+      <input type="text" [(ngModel)]="cab15.anterior[2].peso_jockey" id="">
+    </div>
+    <div class="campo">
+      <label for="">Jockey</label>
+      <input type="text" [(ngModel)]="cab15.anterior[2].jockey" id="">
+    </div>
+  </div>
+</div>

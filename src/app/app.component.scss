@@ -1,0 +1,48 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+}
+label, input{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: serif;
+    margin: 5px 5px;
+    width: 100px;
+}
+label{
+    color: white;
+}
+.carrera{
+    background-color: rgb(63, 50, 100);
+    border-bottom: 4px double white;
+    margin-bottom: 10px;
+    display: flex;
+}
+.caballo{
+    background-color: rgb(63, 50, 100);
+    border-bottom: 2px dotted white;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.actual, .anterior{
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    width: 100vw;
+    margin: 2px;
+}
+
+button{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: serif;
+    margin: 5px 5px;
+}
